@@ -1,0 +1,172 @@
+/*import my fav fonts and my color palette*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url("https://unpkg.com/@rose-pine/palette/css/rose-pine.css");
+
+/* responsivness */
+@media (max-width: 1250px) {
+    .card {
+        height: auto !important;
+        width: auto !important;
+    }
+    #skills {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+/*assign colors to my variables*/
+:root {
+    --background-color: var(--rose-main-base);
+    --surface-color: var(--rose-main-surface);
+    --muted-color: var(--rose-main-muted);
+    --text-color: var(--rose-main-text);
+    --love-color: var(--rose-main-love);
+    --gold-color: var(--rose-main-gold);
+    --rose-color: var(--rose-main-rose);
+    --iris-color: var(--rose-main-iris);
+    --pine-color: var(--rose-main-pine);
+    --foam-color: var(--rose-main-foam);
+    --overlay-color: var(--rose-main-overlay);
+    --big-card-width: 65%;
+    --small-card-width: 25%;
+}
+
+/*reset css*/
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s;
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+.body-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Noto Sans", sans-serif;
+    height: 100vh;
+    width: 100%;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.card {
+    background-color: var(--surface-color);
+    border-radius: 25px;
+    min-height: 150px;
+    min-width: 150px;
+    margin: 10px;
+    display: flex;
+}
+
+#pfp {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#info {
+    width: var(--small-card-width);
+    display: flex;
+    flex-direction: column;
+    padding: 12px 20px 20px 20px;
+    color: var(--love-color);
+}
+
+#info > h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--rose-color);
+}
+
+#info a {
+    color: var(--love-color);
+}
+
+#skills {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-content {
+    background-color: var(--overlay-color);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 130px;
+    margin: 10px;
+}
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skill-item h4 {
+    font-size: 0.7rem;
+}
+
+#formation {
+    width: var(--big-card-width);
+}
+#formation > p {
+    margin-top: 20px;
+}
+
+#hobbie {
+    width: var(--small-card-width);
+}
+
+#hobbie > p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.content {
+    color: var(--iris-color);
+    display: flex;
+    flex-direction: column;
+    padding: 12px 20px 20px 20px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 65%;
+}
+
+.content > h2 {
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.content p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.content p > span {
+    color: var(--foam-color);
+    text-align: left;
+    margin: 20px 0px 20px 0px;
+}
