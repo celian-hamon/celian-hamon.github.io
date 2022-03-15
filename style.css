@@ -12,6 +12,7 @@
     #skills {
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-left: 0% !important;
     }
 }
 
@@ -96,7 +97,7 @@ a {
 }
 
 #skills {
-    width: 65%;
+    margin-left: 27%;
     display: flex;
     flex-direction: row;
 }
