@@ -44,3 +44,4 @@ function switchTheme() {
             break;
     }
 }
+main();
