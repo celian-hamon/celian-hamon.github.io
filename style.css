@@ -35,6 +35,7 @@
 
 /*reset css*/
 * {
+    animation: spawn 2s;
     margin: 0;
     padding: 0;
     transition: all 0.3s;
@@ -97,7 +98,7 @@ a {
 }
 
 #skills {
-    margin-left: 27%;
+    margin-left: 5.75%;
     display: flex;
     flex-direction: row;
 }
@@ -170,4 +171,15 @@ a {
     color: var(--foam-color);
     text-align: left;
     margin: 20px 0px 20px 0px;
+}
+
+@keyframes spawn {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

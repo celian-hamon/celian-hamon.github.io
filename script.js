@@ -1,6 +1,7 @@
 let dark = true;
 function main() {
     console.log("%cBienvenus " + "%csur " + "%cmon " + "%cCV", "color:#eb6f92; font-size: 3em;", "color:#f6c177; font-size: 3em;", "color:#ebbcba; font-size: 3em;", "color:#9ccfd8; font-size: 3em;");
+    console.log("all icones from %chttps://icons8.com/", "color:#9ccfd8; font-size: 1.5em;");
     if (window.matchMedia && !window.matchMedia('(prefers-color-scheme: dark)').matches) {
         // if in light mode switch to dark mode
         switchTheme();
