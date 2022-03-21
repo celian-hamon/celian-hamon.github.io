@@ -12,6 +12,10 @@ function main() {
     }
 }
 
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    switchTheme();
+});
+
 function switchTheme() {
     switch (dark) {
         case true:
