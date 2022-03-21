@@ -13,7 +13,11 @@ function main() {
 }
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    switchTheme();
+    if (event.matches && !dark) {
+        switchTheme();
+    } else if (!event.matches && dark) {
+        switchTheme();
+    }
 });
 
 function switchTheme() {
