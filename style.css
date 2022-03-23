@@ -120,6 +120,8 @@ a {
     justify-content: center;
 }
 .skill-item h4 {
+    display: flex;
+    align-items: center;
     font-size: 0.7rem;
 }
 
@@ -182,4 +184,16 @@ a {
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+.open {
+    color: var(--text-color);
+    margin-left: 2px;
+    width: 12px;
+    height: 12px;
+}
+
+#links-skills.skill-content {
+    display: flex;
+    flex-direction: column;
 }
