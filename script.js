@@ -23,17 +23,17 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
 function switchTheme() {
     switch (dark) {
         case true:
-            document.documentElement.style.setProperty('--background-color', 'var(--rose-dawn-base)');
-            document.documentElement.style.setProperty('--surface-color', 'var(--rose-dawn-surface)');
-            document.documentElement.style.setProperty('--muted-color', 'var(--rose-dawn-muted)');
-            document.documentElement.style.setProperty('--text-color', 'var(--rose-dawn-text)');
-            document.documentElement.style.setProperty('--love-color', 'var(--rose-dawn-love)');
-            document.documentElement.style.setProperty('--gold-color', 'var(--rose-dawn-gold)');
-            document.documentElement.style.setProperty('--rose-color', 'var(--rose-dawn-rose)');
-            document.documentElement.style.setProperty('--iris-color', 'var(--rose-dawn-iris)');
-            document.documentElement.style.setProperty('--pine-color', 'var(--rose-dawn-pine)');
-            document.documentElement.style.setProperty('--foam-color', 'var(--rose-dawn-foam)');
-            document.documentElement.style.setProperty('--overlay-color', 'var(--rose-dawn-overlay)');
+            document.documentElement.style.setProperty('--background-color', 'var(--rp-dawn-base)');
+            document.documentElement.style.setProperty('--surface-color', 'var(--rp-dawn-surface)');
+            document.documentElement.style.setProperty('--muted-color', 'var(--rp-dawn-muted)');
+            document.documentElement.style.setProperty('--text-color', 'var(--rp-dawn-text)');
+            document.documentElement.style.setProperty('--love-color', 'var(--rp-dawn-love)');
+            document.documentElement.style.setProperty('--gold-color', 'var(--rp-dawn-gold)');
+            document.documentElement.style.setProperty('--rose-color', 'var(--rp-dawn-rose)');
+            document.documentElement.style.setProperty('--iris-color', 'var(--rp-dawn-iris)');
+            document.documentElement.style.setProperty('--pine-color', 'var(--rp-dawn-pine)');
+            document.documentElement.style.setProperty('--foam-color', 'var(--rp-dawn-foam)');
+            document.documentElement.style.setProperty('--overlay-color', 'var(--rp-dawn-overlay)');
             dark = false;
             break;
         case false:

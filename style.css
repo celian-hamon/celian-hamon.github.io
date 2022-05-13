@@ -18,17 +18,17 @@
 
 /*assign colors to my variables*/
 :root {
-    --background-color: var(--rose-main-base);
-    --surface-color: var(--rose-main-surface);
-    --muted-color: var(--rose-main-muted);
-    --text-color: var(--rose-main-text);
-    --love-color: var(--rose-main-love);
-    --gold-color: var(--rose-main-gold);
-    --rose-color: var(--rose-main-rose);
-    --iris-color: var(--rose-main-iris);
-    --pine-color: var(--rose-main-pine);
-    --foam-color: var(--rose-main-foam);
-    --overlay-color: var(--rose-main-overlay);
+    --background-color: var(--rp-main-base);
+    --surface-color: var(--rp-main-surface);
+    --muted-color: var(--rp-main-muted);
+    --text-color: var(--rp-main-text);
+    --love-color: var(--rp-main-love);
+    --gold-color: var(--rp-main-gold);
+    --rose-color: var(--rp-main-rose);
+    --iris-color: var(--rp-main-iris);
+    --pine-color: var(--rp-main-pine);
+    --foam-color: var(--rp-main-foam);
+    --overlay-color: var(--rp-main-overlay);
     --big-card-width: 65%;
     --small-card-width: 25%;
 }
@@ -197,3 +197,25 @@ a {
     display: flex;
     flex-direction: column;
 }
+
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 70%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "profile skills skills"
+        "formation formation hobbies";
+}
+.skills {
+    grid-area: skills;
+}
+.profile {
+    grid-area: profile;
+}
+.formation {
+    grid-area: formation;
+}
+.hobbies {
+    grid-area: hobbies;
+} */
